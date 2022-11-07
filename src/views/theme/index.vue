@@ -3,14 +3,14 @@
     <el-card class="box-card">
       <div slot="header">
         <a class="link-type link-title" target="_blank" href="https://panjiachen.github.io/vue-element-admin-site/guide/advanced/theme.html">
-          Theme documentation
+          换肤文档
         </a>
       </div>
       <div class="box-item">
-        <span class="field-label">Change Theme : </span>
+        <span class="field-label">换肤 : </span>
         <el-switch v-model="theme" />
         <aside style="margin-top:15px;">
-          Tips: It is different from the theme-pick on the navbar is two different skinning methods, each with different application scenarios. Refer to the documentation for details.
+          Tips: 它区别于 navbar 上的 theme-pick, 是两种不同的换肤方法，各自有不同的应用场景，具体请参考文档。
         </aside>
       </div>
     </el-card>
