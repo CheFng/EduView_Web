@@ -31,7 +31,6 @@
         </el-form-item>
       </el-tooltip>
 
-      <br/>
       <div style="position:relative">
         <el-button :loading="loading" type="primary" style="margin-left:30%;width:40%;margin-bottom:30px;" @click.native.prevent="handleLogin">登录</el-button>
         <el-button :loading="loading" style="width:15%;" @click.native.prevent="handleLogin">注册</el-button>

@@ -4,9 +4,7 @@
 <template>
   <div class="login-container">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" autocomplete="on" label-position="left">
-      <br/>
-      <br/>
-      <br/>
+
       <div class="title-container">
         <h3 class="title">义务教育信息化建设可视化管理系统</h3>
       </div>
@@ -31,26 +29,22 @@
         </el-form-item>
       </el-tooltip>
 
-      <br/>
+      <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">登录</el-button>
+
       <div style="position:relative">
-        <el-button :loading="loading" type="primary" style="margin-left:30%;width:40%;margin-bottom:30px;" @click.native.prevent="handleLogin">登录</el-button>
-        <el-button :loading="loading" style="width:15%;" @click.native.prevent="handleLogin">注册</el-button>
-      </div>
-      
-      <!-- <div style="position:relative">
-        <div class="tips">
+        <!-- <div class="tips">
           <span>账号 : admin</span>
           <span>密码 : 随便填</span>
         </div>
         <div class="tips">
           <span style="margin-right:18px;">账号 : editor</span>
           <span>密码 : 随便填</span>
-        </div>
+        </div> -->
 
         <el-button class="thirdparty-button" type="primary" @click="showDialog=true">
           第三方登录
         </el-button>
-      </div> -->
+      </div>
     </el-form>
 
     <el-dialog title="Or connect with" :visible.sync="showDialog">
